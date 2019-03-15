@@ -1,54 +1,103 @@
 <!DOCTYPE html>
-<!-- saved from url=(0111)https://www.quackit.com/html/html_editors/scratchpad/preview.cfm?example=/css/codes/marquees/left_to_right_text -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Example</title>
-
-<!-- Styles -->	
+<title>Example</title>
 <style>
-.example2 {
- height: 50px;	
- overflow: hidden;
- position: relative;
+    
+    .marquee {
+        padding-left: 1.5em;
+        position: relative;
+        font: 50px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+        width: 450px;
+        margin: 2em auto
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        animation: marquee 50s linear infinite;
+    }
+.marquee:hover {
+    animation-play-state: paused
 }
-.example2 h3 {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(-100%);
- -webkit-transform:translateX(-100%);	
- transform:translateX(-100%);
- /* Apply animation to this element */	
- -moz-animation: example2 15s linear infinite;
- -webkit-animation: example2 15s linear infinite;
- animation: example2 15s linear infinite;
+@keyframes marquee {
+    0% {
+        text-indent: 27.5em
+    }
+    100% {
+        text-indent: -105em
+    }
 }
-/* Move it (define the animation) */
-@-moz-keyframes example2 {
- 0%   { -moz-transform: translateX(-100%); }
- 100% { -moz-transform: translateX(100%); }
-}
-@-webkit-keyframes example2 {
- 0%   { -webkit-transform: translateX(-100%); }
- 100% { -webkit-transform: translateX(100%); }
-}
-@keyframes example2 {
- 0%   { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 		
- }
- 100% { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%); 
- }
-}
-</style>
 
-<!-- HTML -->
-</head><body><div class="example2">
-<h3>Left to right... </h3>
-</div> </body></html>
+/* Make it pretty */
+
+.microsoft {
+    padding-left: 1.5em;
+    position: relative;
+    font: 50px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+/* ::before was :before before ::before was ::before - kthx */
+
+.microsoft:before,
+.microsoft::before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: .5em;
+    height: .5em;
+}
+
+.microsoft:after,
+.microsoft::after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 2em;
+    background-image: linear-gradient(90deg, white 70%, rgba(255, 255, 255, 0));
+}
+
+/* Style the links */
+
+.vanity {
+    color: #333;
+    text-align: center;
+    font: 20px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+.vanity a,
+.microsoft a {
+    color: #1570A6;
+    transition: color .5s;
+    text-decoration: none;
+}
+
+.vanity a:hover,
+.microsoft a:hover {
+    color: #F65314;
+}
+
+.text {
+    color: #333;
+    text-align: left;
+    font: 20px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+
+
+</style>
+<p class="text"> Hello! Do you like shopping at BJs and Costco but you can't get there? Do you have an appetite for snacks in bulk? </p>
+<p class="marquee">BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon).</p>
+
+<p class="text"> You select what you want from the Fensly store, it’s kind of like Uber Eats or Doordash. We buy it from either BJs or Costco, way in the middle of nowhere. Then we deliver it in the same day. Making things a lot easier. .</p>
+<p class="text"> We’ll be up and running soon. Follow us on Twitter @NEUFenslyy to know when. </p>
+<p class="text"> We’re a bit busy, but if you’d like to know more contact me Jacob at jacob@fensly.com or Max at maxearland@fensly.com </p>
+<p class="vanity">
+<a href="https://twitter.com/jonathansampson">@jonathansampson</a> of
+<a href="https://twitter.com/appendTo">@appendTo</a>
+</p>
+
+
+
+
