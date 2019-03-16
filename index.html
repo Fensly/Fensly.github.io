@@ -1,103 +1,86 @@
-<!DOCTYPE html>
-<title>Example</title>
 <style>
-    
-    .marquee {
-        padding-left: 1.5em;
-        position: relative;
-        font: 50px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
-        width: 450px;
-        margin: 2em auto
-        overflow: hidden;
-        white-space: nowrap;
-        box-sizing: border-box;
-        animation: marquee 50s linear infinite;
-    }
-.marquee:hover {
-    animation-play-state: paused
-}
-@keyframes marquee {
-    0% {
-        text-indent: 27.5em
-    }
-    100% {
-        text-indent: -105em
-    }
-}
+@font-face {
+    font-family: 'space_grotesklight';
+    src: url('https://github.com/Fensly/fensly.github.io/raw/master/spacegrotesk-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
-/* Make it pretty */
-
-.microsoft {
-    padding-left: 1.5em;
-    position: relative;
-    font: 50px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+  
+.marquee {
+  background-color: #ddd;
+  position: absolute;
+  bottom: 10px;
+  width: 99%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee span {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 8s linear infinite;
+}
+.marquee:hover span {
+  animation-play-state: paused;
 }
 
-/* ::before was :before before ::before was ::before - kthx */
-
-.microsoft:before,
-.microsoft::before {
-    z-index: 2;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1em;
-    width: .5em;
-    height: .5em;
+.marquee span:nth-child(1) {
+  animation-delay: 0s;
+}
+.marquee span:nth-child(2) {
+  animation-delay: 0s;
+}
+.marquee span:nth-child(3) {
+  animation-delay: 0;
+}
+.marquee span:nth-child(4) {
+  animation-delay: 0;
+}
+.marquee span:nth-child(5) {
+  animation-delay: 0s;
 }
 
-.microsoft:after,
-.microsoft::after {
-    z-index: 1;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2em;
-    height: 2em;
-    background-image: linear-gradient(90deg, white 70%, rgba(255, 255, 255, 0));
-}
-
-/* Style the links */
-
-.vanity {
+.text {
     color: #333;
-    text-align: center;
-    font: 20px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    text-align: left;
+    font-family: "space_grotesklight";
+    width: 70%;
+	padding-left: 2%;
 }
 
-.vanity a,
+.text a,
 .microsoft a {
     color: #1570A6;
     transition: color .5s;
     text-decoration: none;
 }
 
-.vanity a:hover,
+.text a:hover,
 .microsoft a:hover {
     color: #F65314;
 }
-
-.text {
-    color: #333;
-    text-align: left;
-    font: 20px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
 }
-
-
-
 </style>
-<p class="text"> Hello! Do you like shopping at BJs and Costco but you can't get there? Do you have an appetite for snacks in bulk? </p>
-<p class="marquee">BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon)  🐰  BEST DEALS IN TOWN. FREE SAME DAY DELIVERY/ORDER BY 5PM. COMING IN THE IMMEDIATE FURURE (very soon).</p>
 
-<p class="text"> You select what you want from the Fensly store, it’s kind of like Uber Eats or Doordash. We buy it from either BJs or Costco, way in the middle of nowhere. Then we deliver it in the same day. Making things a lot easier. .</p>
-<p class="text"> We’ll be up and running soon. Follow us on Twitter @NEUFenslyy to know when. </p>
-<p class="text"> We’re a bit busy, but if you’d like to know more contact me Jacob at jacob@fensly.com or Max at maxearland@fensly.com </p>
-<p class="vanity">
-<a href="https://twitter.com/jonathansampson">@jonathansampson</a> of
-<a href="https://twitter.com/appendTo">@appendTo</a>
+<!-- HTML -->
+<p class="marquee">
+  <span><a href="https://twitter.com/jonathansampson"> jacob@fensly.com</a> or Max at <a href="https://twitter.com/jonathansampson"> maxearland@fensly.com </a></span>
+  <span>simple marquee</span>
+  <span>using css</span>
+  <span>only tech</span>
+  <span>with a delay</span>
 </p>
-
-
-
-
+<p class="text"> Hello! Do you like shopping at BJs and Costco but you can't get there? Do you have an appetite for food and snacks in bulk? 
+<p class="text"> You select what you want from our store, it’s kind of like Uber Eats or Doordash. We buy it from either BJs or Costco, way in the middle of nowhere. Then we deliver it in the same day. Making things a lot easier. .
+<p class="text"> We’ll be up and running soon. Follow us on Twitter
+<a href="https://twitter.com/jonathansampson">@NEUFensley</a> to know when.
+<p class="text">  We’re a bit busy, but if you’d like to know more contact me Jacob at
+<a href="https://twitter.com/jonathansampson">@jacob@fensly.com</a> or Max at <a href="https://twitter.com/jonathansampson"> maxearland@fensly.com </a>
+</p>
