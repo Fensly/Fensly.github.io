@@ -1,86 +1,85 @@
-<style>
-@font-face {
-    font-family: 'space_grotesklight';
-    src: url('https://github.com/Fensly/fensly.github.io/raw/master/spacegrotesk-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 
-}
-  
-.marquee {
-  background-color: #ddd;
-  position: absolute;
-  bottom: 10px;
-  width: 99%;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.marquee span {
-  display: inline-block;
-  font-size: 20px;
-  position: relative;
-  left: 100%;
-  animation: marquee 8s linear infinite;
-}
-.marquee:hover span {
-  animation-play-state: paused;
+<!-- saved from url=(0025)https://fensly.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Thasadith');
+
+#marquee {
+    height: 100px;
+    overflow: hidden;
 }
 
-.marquee span:nth-child(1) {
-  animation-delay: 0s;
+#marquee p {
+    width: 100%;
+    line-height: 100px;
+    margin: 0;
+    font-family: 'Lilita One', cursive;
+    font-size: 160px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 96px;
+    animation: marquee 30s linear infinite;
+    animation-direction: alternate;
+    line-height:20px;
 }
-.marquee span:nth-child(2) {
-  animation-delay: 0s;
+
+@keyframes marquee {
+    0%   {margin-left: 100%;}
+    100% {margin-left: -38em;}
 }
-.marquee span:nth-child(3) {
-  animation-delay: 0;
+#marquee a{
+    color: #A9D0F4;
+    transition: color .2s;
+    text-decoration: none;
 }
-.marquee span:nth-child(4) {
-  animation-delay: 0;
+
+#marquee p:hover{
+    animation-play-state: paused;
+    color: #49A1EB;
 }
-.marquee span:nth-child(5) {
-  animation-delay: 0s;
-}
+
 
 .text {
     color: #333;
-    text-align: left;
-    font-family: "space_grotesklight";
-    width: 70%;
+    text-align:left;
+    width: 60%;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 35px;
 	padding-left: 2%;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .text a,
 .microsoft a {
-    color: #1570A6;
-    transition: color .5s;
+    color: #49A1EB;
+    transition: color .2s;
     text-decoration: none;
 }
 
 .text a:hover,
 .microsoft a:hover {
-    color: #F65314;
+    color: #2A6EB9;
 }
-  
-@keyframes marquee {
-  0%   { left: 100%; }
-  100% { left: -100%; }
-}
+
 </style>
 
 <!-- HTML -->
-<p class="marquee">
-  <span><a href="https://twitter.com/jonathansampson"> jacob@fensly.com</a> or Max at <a href="https://twitter.com/jonathansampson"> maxearland@fensly.com </a></span>
-  <span>simple marquee</span>
-  <span>using css</span>
-  <span>only tech</span>
-  <span>with a delay</span>
+<body>
+    <div id="marquee">
+        <p> <a href="https://twitter.com/jonathansampson"> FREE SAME DAY DELIVERY/ORDER BY 5PM 🐻 BEST DEALS IN TOWN 🐻 FOLLOW US ON TWITTER @NEUFensley</a> </p>
+    </div>
+    
+</body>
+<p class="text"> Hello! Do you wish you could shop at Costco’s or BJs but you can't get there? Do you have an appetite for food and snacks in bulk?
 </p>
-<p class="text"> Hello! Do you like shopping at BJs and Costco but you can't get there? Do you have an appetite for food and snacks in bulk? 
-<p class="text"> You select what you want from our store, it’s kind of like Uber Eats or Doordash. We buy it from either BJs or Costco, way in the middle of nowhere. Then we deliver it in the same day. Making things a lot easier. .
-<p class="text"> We’ll be up and running soon. Follow us on Twitter
-<a href="https://twitter.com/jonathansampson">@NEUFensley</a> to know when.
-<p class="text">  We’re a bit busy, but if you’d like to know more contact me Jacob at
-<a href="https://twitter.com/jonathansampson">@jacob@fensly.com</a> or Max at <a href="https://twitter.com/jonathansampson"> maxearland@fensly.com </a>
+<p> </p>
+<p class="text"> 1. You select ➡️ 2. We deligently gather your items ➡️ 3. We deliver it from way out in the boonies
 </p>
+<p> </p>
+<p class="text"> We’ll be up and running soon. Follow us on Twitter <a href="https://twitter.com/jonathansampson">@NEUFensley</a> to know when.
+</p>
+<p> </p>
+<p class="text">  We’re a bit busy, but if you’d like to know more contact me Jacob at <a href="https://twitter.com/jonathansampson">@jacob@fensly.com</a> or Max at <a href="https://twitter.com/jonathansampson"> maxearland@fensly.com </a>
+</p>
+</body></html>
